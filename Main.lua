@@ -1,3 +1,9 @@
+-- Define the setfpscap function here
+local function setfpscap(fps)
+    -- Your implementation goes here
+    print("FPS cap set to: " .. fps)
+end
+
 if not setfpscap then return end
 
 local UserInputService, RunService = game:GetService("UserInputService"), game:GetService("RunService")
