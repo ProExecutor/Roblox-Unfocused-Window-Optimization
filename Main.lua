@@ -1,22 +1,24 @@
--- Create a variable to track whether the window is focused
-local isWindowFocused = true
+local gui = Instance.new("ScreenGui")
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
--- Connect to the 'WindowFocusReleased' event
-game:GetService("UserInputService").WindowFocusReleased:Connect(function()
-    -- When the window loses focus, set 'isWindowFocused' to false
-    isWindowFocused = false
-end)
+local frame = Instance.new("Frame")
+-- ... (rest of the frame creation code)
 
--- Connect to the 'WindowFocused' event
-game:GetService("UserInputService").WindowFocused:Connect(function()
-    -- When the window gains focus, set 'isWindowFocused' to true
-    isWindowFocused = true
-end)
+local madeByText = Instance.new("TextLabel")
+-- ... (rest of the madeByText creation code)
 
--- Main game loop
-while wait() do
-    -- Only run intensive operations if the window is focused
-    if isWindowFocused then
-        -- Intensive operations go here
-    end
+local pilihText = Instance.new("TextLabel")
+-- ... (rest of the pilihText creation code)
+
+-- FPS Boosting Code (Inserted here)
+local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+local g = game
+local w = g.Workspace
+local l = g.Lighting
+local t = w.Terrain
+-- ... (rest of the FPS boosting code)
+
+local options = {"60 FPS", "120 FPS", "255 FPS", "Max FPS"}
+for i, option in ipairs(options) do
+    -- ... (rest of the FPS button creation code)
 end
