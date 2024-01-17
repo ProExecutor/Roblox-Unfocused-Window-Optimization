@@ -13,7 +13,7 @@ It is recommended that you put this script into your executor's **auto execute**
 Load the script by copying it from [here](https://raw.githubusercontent.com/ProExecutor/Roblox-Unfocused-Window-Optimization/main/Main.lua) or by executing the code below.
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Roblox-Unfocused-Window-Optimization/main/Main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ProExecutor/Roblox-Unfocused-Window-Optimization/main/Main.lua"))()
 ```
 ## Contact Information
 - [Email](mailto:exunys@gmail.com)
